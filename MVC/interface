@@ -1,0 +1,7 @@
+public interface OnRequestListener {
+    void onSuccess(List<String> data);
+    void onFailed();
+}
+public interface RequestBiz {
+    void requestForData(OnRequestListener listener);
+    }
